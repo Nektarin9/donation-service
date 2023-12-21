@@ -38,7 +38,7 @@ class DonationService {
         btn.addEventListener("click", event => {
             event.preventDefault()
             // Не будем же мы разорять потенциальных меценатов, да и верстку ломать не хочется =)
-            if (inputDonate.value && inputDonate.value < 10000000000 & inputDonate.value !== "0" && inputDonate.value > 0) {
+            if (inputDonate.value && inputDonate.value < 10000000000 && inputDonate.value !== "0" && inputDonate.value > 0) {
                 this.#createDonateList(inputDonate.value)
                 this.#calkulationSumDonatetion()
                 inputDonate.value = ""
